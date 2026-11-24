@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shailesh Kasbekar | Software Developer</title>
+  <meta name="description" content="Portfolio of Shailesh Aniruddha Kasbekar, B.Tech Information Technology student at SGGS Nanded, building C++ database internals and AI-powered web applications.">
+  <meta name="author" content="Shailesh Aniruddha Kasbekar">
+  <meta name="theme-color" content="#0a0d14">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shailesh Kasbekar | Software Developer">
+  <meta property="og:description" content="B.Tech IT student building a relational database engine in C++17 and an AI-powered ATS Resume Analyzer.">
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner container" aria-label="Primary">
+      <a href="#home" class="brand" aria-label="Shailesh Kasbekar, home">
+        <span class="brand-mark">SK</span>
+        <span class="brand-name">Shailesh<span class="accent">.</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a href="resume.pdf" class="btn btn-sm btn-outline" download="Shailesh_Kasbekar_Resume.pdf">
+            <i class="fa-solid fa-download" aria-hidden="true"></i> Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow reveal"><span class="pulse-dot"></span> Open to software development opportunities</p>
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="gradient-text">Shailesh Aniruddha Kasbekar</span>
+          </h1>
+          <p class="hero-role reveal">
+            B.Tech Information Technology student &middot; SGGS, Nanded
+          </p>
+          <p class="hero-tagline reveal">
+            I build software from the ground up, from <strong>B+ tree indexes in C++</strong>
+            to <strong>AI-powered web applications</strong> in Python and Flask.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-code" aria-hidden="true"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact Me
+            </a>
+            <a href="resume.pdf" class="btn btn-ghost" download="Shailesh_Kasbekar_Resume.pdf">
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="hero-socials reveal">
+            <a data-link="github" hidden target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a data-link="linkedin" hidden target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a data-link="leetcode" hidden target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+            <a href="mailto:shaileshkasbekar46@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Terminal card -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              <span class="terminal-title">minidb&gt; shailesh</span>
+            </div>
+            <pre class="terminal-body"><code><span class="t-prompt">minidb&gt;</span> <span class="t-kw">SELECT</span> focus, stack
+   <span class="t-kw">FROM</span> developer
+   <span class="t-kw">WHERE</span> name = <span class="t-str">'Shailesh'</span>;
+
+<span class="t-dim">+-------------------+-------------------------+</span>
+<span class="t-dim">|</span> <span class="t-col">focus</span>             <span class="t-dim">|</span> <span class="t-col">stack</span>                   <span class="t-dim">|</span>
+<span class="t-dim">+-------------------+-------------------------+</span>
+<span class="t-dim">|</span> Systems           <span class="t-dim">|</span> C++17, CMake, B+ Trees  <span class="t-dim">|</span>
+<span class="t-dim">|</span> Backend           <span class="t-dim">|</span> Python, Flask, REST     <span class="t-dim">|</span>
+<span class="t-dim">|</span> Databases         <span class="t-dim">|</span> MySQL, MongoDB          <span class="t-dim">|</span>
+<span class="t-dim">|</span> AI / NLP          <span class="t-dim">|</span> Groq API, spaCy         <span class="t-dim">|</span>
+<span class="t-dim">+-------------------+-------------------------+</span>
+<span class="t-ok">4 rows</span> <span class="t-dim">(index scan)</span>
+<span class="t-prompt">minidb&gt;</span> <span class="cursor"></span></code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="stats reveal">
+          <li><span class="stat-num">~2,000&times;</span><span class="stat-label">faster indexed lookups vs. full scans (100K rows)</span></li>
+          <li><span class="stat-num">58</span><span class="stat-label">unit &amp; integration tests in MiniDBMS</span></li>
+          <li><span class="stat-num">300+</span><span class="stat-label">DSA problems solved</span></li>
+          <li><span class="stat-num">2</span><span class="stat-label">end-to-end projects: systems &amp; AI</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">01. About</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a final-year <strong>Information Technology</strong> student at
+              <strong>Shri Guru Gobind Singhji Institute of Engineering and Technology (SGGS)</strong>, Nanded,
+              with hands-on experience in <strong>C++ systems programming</strong> and
+              <strong>AI-powered web applications</strong>.
+            </p>
+            <p>
+              I'm skilled in data structures, database fundamentals, and backend development, and I build
+              practical software using <strong>Python, Flask, and MySQL</strong>. My largest project is a relational
+              database engine written from scratch in C++17, with an SQL parser, a query planner, B+ tree indexes
+              and a buffer cache.
+            </p>
+            <p>
+              I'm looking for software development roles in <strong>backend</strong>,
+              <strong>full-stack</strong>, or <strong>systems engineering</strong>.
+            </p>
+          </div>
+
+          <div class="about-cards">
+            <article class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+              <div>
+                <h3>Education</h3>
+                <p>B.Tech in Information Technology, SGGS Nanded (2023–2027)</p>
+              </div>
+            </article>
+            <article class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+              <div>
+                <h3>Technical Interests</h3>
+                <p>Database internals, systems programming, backend services and applied NLP</p>
+              </div>
+            </article>
+            <article class="info-card reveal">
+              <div class="info-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+              <div>
+                <h3>Career Objective</h3>
+                <p>Software development roles in backend, full-stack, or systems engineering</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">02. Skills</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-sub">The tools and fundamentals I use to build software.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-head"><i class="fa-solid fa-terminal" aria-hidden="true"></i><h3>Programming Languages</h3></div>
+            <ul class="chips">
+              <li>C</li><li>C++</li><li>Java</li><li>Python</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head"><i class="fa-solid fa-palette" aria-hidden="true"></i><h3>Frontend</h3></div>
+            <ul class="chips">
+              <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Bootstrap</li><li>Jinja2</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head"><i class="fa-solid fa-server" aria-hidden="true"></i><h3>Backend</h3></div>
+            <ul class="chips">
+              <li>Python</li><li>Flask</li><li>REST APIs</li><li>C++ HTTP/JSON API</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head"><i class="fa-solid fa-database" aria-hidden="true"></i><h3>Databases &amp; Systems</h3></div>
+            <ul class="chips">
+              <li>MySQL</li><li>MongoDB</li><li>DBMS Internals</li><li>SQL Parsing</li>
+              <li>Query Planning</li><li>B+ Trees</li><li>Buffer Management</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head"><i class="fa-solid fa-brain" aria-hidden="true"></i><h3>AI / ML &amp; NLP</h3></div>
+            <ul class="chips">
+              <li>Groq API</li><li>spaCy</li><li>scikit-learn</li><li>PyMuPDF</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-head"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i><h3>Developer Tools</h3></div>
+            <ul class="chips">
+              <li>Git</li><li>GitHub</li><li>VS Code</li><li>CMake</li><li>AWS (Basics)</li>
+            </ul>
+          </article>
+
+          <article class="skill-card skill-card-wide reveal">
+            <div class="skill-head"><i class="fa-solid fa-cubes" aria-hidden="true"></i><h3>Core Computer Science</h3></div>
+            <ul class="chips">
+              <li>Data Structures &amp; Algorithms</li><li>Object-Oriented Programming</li>
+              <li>Operating Systems</li><li>Computer Networks</li><li>DBMS</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">03. Projects</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-sub">Two end-to-end builds: one in AI-powered web development, one in database internals.</p>
+        </div>
+
+        <!-- ATS Resume Analyzer -->
+        <article class="project reveal">
+          <div class="project-main">
+            <div class="project-top">
+              <span class="badge badge-featured"><i class="fa-solid fa-star" aria-hidden="true"></i> Featured</span>
+              <span class="badge">AI &middot; Full-Stack Web App</span>
+            </div>
+            <h3 class="project-title">AI-Powered ATS Resume Analyzer</h3>
+            <p class="project-desc">
+              A web application that evaluates resumes against a selected job role and job description. It returns an
+              ATS-style score, matched and missing skills, and relevant keywords. The score comes from an
+              explainable, weighted rule-based engine combined with a Groq-powered AI review.
+            </p>
+
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>An explainable, weighted rule-based scoring engine, plus a Groq-powered AI review of job relevance, experience, projects and resume clarity</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>PDF text extraction, section and skill detection, and evidence-based skill matching</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Job-description analysis that produces a tailored professional summary</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Learning recommendations for missing skills and general resume-quality checks</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>User authentication and a dashboard with searchable analysis history</li>
+            </ul>
+
+            <ul class="tech-tags" aria-label="Technologies used">
+              <li>Python</li><li>Flask</li><li>MySQL</li><li>Groq API</li><li>PyMuPDF</li>
+              <li>spaCy</li><li>scikit-learn</li><li>HTML/CSS/JavaScript</li>
+            </ul>
+
+            <div class="project-links">
+              <a data-link="atsRepo" hidden class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-visual" aria-hidden="true">
+            <p class="visual-label">Analysis pipeline</p>
+            <ol class="pipeline">
+              <li><i class="fa-solid fa-file-pdf"></i><span>Resume PDF</span><small>PyMuPDF extraction</small></li>
+              <li><i class="fa-solid fa-layer-group"></i><span>Section &amp; Skill Detection</span><small>spaCy · scikit-learn</small></li>
+              <li><i class="fa-solid fa-scale-balanced"></i><span>Weighted Rule-Based Score</span><small>explainable ATS score</small></li>
+              <li><i class="fa-solid fa-robot"></i><span>Groq AI Review</span><small>relevance · experience · clarity</small></li>
+              <li><i class="fa-solid fa-chart-simple"></i><span>Report &amp; History</span><small>Flask · MySQL dashboard</small></li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- MiniDBMS -->
+        <article class="project project-reverse reveal">
+          <div class="project-main">
+            <div class="project-top">
+              <span class="badge badge-featured"><i class="fa-solid fa-star" aria-hidden="true"></i> Featured</span>
+              <span class="badge">Systems &middot; Database Engine</span>
+            </div>
+            <h3 class="project-title">MiniDBMS: Relational Database Engine in C++17</h3>
+            <p class="project-desc">
+              A relational database engine built from scratch, without MySQL or SQLite. It includes an SQL lexer and
+              recursive-descent parser, a query executor, a rule-based query planner with <code>EXPLAIN</code>, and
+              persistent 4&nbsp;KB page storage with an LRU buffer cache.
+            </p>
+
+            <ul class="feature-list">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Disk-based B+ tree indexes with node splits, borrow/merge, range scans and page reuse. Indexed lookups ran <strong>about 2,000&times; faster</strong> than full table scans on 100,000 rows (tree height 3).</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Multiple databases (<code>CREATE</code>/<code>USE</code>/<code>DROP DATABASE</code>), <code>INSERT</code>/<code>SELECT</code>/<code>UPDATE</code>/<code>DELETE</code>, and persistence across restarts</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><code>PRIMARY KEY</code>, <code>UNIQUE</code> and <code>NOT NULL</code> constraints, and aggregate functions</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i><strong>MiniDB Studio</strong>: a browser SQL dashboard on a C++ HTTP/JSON API, secured with session tokens, Host/Origin checks and CSP</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i>Verified by <strong>58 unit/integration tests</strong> and a headless-Chrome end-to-end test suite</li>
+            </ul>
+
+            <ul class="tech-tags" aria-label="Technologies used">
+              <li>C++17</li><li>CMake</li><li>SQL</li><li>B+ Trees</li><li>File I/O</li>
+              <li>HTTP/JSON</li><li>JavaScript</li><li>Git</li>
+            </ul>
+
+            <div class="project-links">
+              <a data-link="minidbmsRepo" hidden class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-visual" aria-hidden="true">
+            <p class="visual-label">Engine architecture</p>
+            <ol class="pipeline">
+              <li><i class="fa-solid fa-keyboard"></i><span>SQL Lexer &amp; Parser</span><small>recursive descent</small></li>
+              <li><i class="fa-solid fa-diagram-project"></i><span>Rule-Based Planner</span><small>EXPLAIN support</small></li>
+              <li><i class="fa-solid fa-gears"></i><span>Query Executor</span><small>CRUD · constraints · aggregates</small></li>
+              <li><i class="fa-solid fa-sitemap"></i><span>B+ Tree Indexes</span><small>splits · merges · range scans</small></li>
+              <li><i class="fa-solid fa-hard-drive"></i><span>LRU Buffer Cache</span><small>4 KB persistent pages</small></li>
+            </ol>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">04. Education</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-building-columns" aria-hidden="true"></i></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2023 – 2027</span>
+                <span class="timeline-score">CGPA: 6.57 / 10</span>
+              </div>
+              <h3>Bachelor of Technology in Information Technology</h3>
+              <p class="timeline-org">Shri Guru Gobind Singhji Institute of Engineering and Technology (SGGS)</p>
+              <p class="timeline-loc"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Nanded, Maharashtra</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-flask" aria-hidden="true"></i></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">Higher Secondary (12th), Science</span>
+                <span class="timeline-score">66.67%</span>
+              </div>
+              <h3>Shri Chakradhar Swami Mahavidyalay</h3>
+              <p class="timeline-loc"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Jalna, Maharashtra</p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <div class="timeline-dot"><i class="fa-solid fa-school" aria-hidden="true"></i></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">Secondary School (10th)</span>
+                <span class="timeline-score">90.40%</span>
+              </div>
+              <h3>Saraswati Bhuwan Prashala</h3>
+              <p class="timeline-loc"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Jalna, Maharashtra</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">05. Achievements</span>
+          <h2 class="section-title">Achievements &amp; Coding Practice</h2>
+        </div>
+
+        <div class="achieve-grid">
+          <article class="achieve-card reveal">
+            <div class="achieve-icon"><i class="fa-solid fa-trophy" aria-hidden="true"></i></div>
+            <h3>300+ DSA Problems Solved</h3>
+            <p>
+              Across LeetCode, GeeksforGeeks and HackerRank, covering arrays, strings, linked lists, stacks, queues,
+              trees, BSTs, recursion, sorting and searching.
+            </p>
+            <div class="achieve-links">
+              <a data-link="leetcode" hidden target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code" aria-hidden="true"></i> LeetCode</a>
+              <a data-link="gfg" hidden target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> GeeksforGeeks</a>
+              <a data-link="hackerrank" hidden target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-hackerrank" aria-hidden="true"></i> HackerRank</a>
+            </div>
+          </article>
+
+          <article class="achieve-card reveal">
+            <div class="achieve-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
+            <h3>Systems &amp; AI Projects</h3>
+            <p>
+              Built software projects in two areas: C++ database internals (MiniDBMS) and AI-powered resume analysis
+              (ATS Resume Analyzer).
+            </p>
+          </article>
+
+          <article class="achieve-card reveal">
+            <div class="achieve-icon"><i class="fa-solid fa-arrow-trend-up" aria-hidden="true"></i></div>
+            <h3>Consistent Problem Solving</h3>
+            <p>
+              Strengthening problem-solving skills through regular Data Structures &amp; Algorithms practice.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <span class="section-kicker">06. Contact</span>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-sub">
+            I'm open to software development opportunities in backend, full-stack and systems engineering.
+            The fastest way to reach me is email.
+          </p>
+
+          <div class="email-row">
+            <a href="mailto:shaileshkasbekar46@gmail.com" class="email-link">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span>shaileshkasbekar46@gmail.com</span>
+            </a>
+            <button type="button" class="copy-btn" id="copyEmail" data-email="shaileshkasbekar46@gmail.com" aria-label="Copy email address">
+              <i class="fa-regular fa-copy" aria-hidden="true"></i><span>Copy</span>
+            </button>
+          </div>
+
+          <div class="contact-actions">
+            <a href="mailto:shaileshkasbekar46@gmail.com" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send Email
+            </a>
+            <a data-link="linkedin" hidden class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+            </a>
+            <a data-link="github" hidden class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a data-link="leetcode" hidden class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-code" aria-hidden="true"></i> LeetCode
+            </a>
+            <a href="resume.pdf" class="btn btn-ghost" download="Shailesh_Kasbekar_Resume.pdf">
+              <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Shailesh Aniruddha Kasbekar</p>
+      <a href="#home" class="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
