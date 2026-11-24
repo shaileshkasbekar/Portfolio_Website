@@ -11,7 +11,9 @@ const PROFILE_LINKS = {
   gfg: "https://www.geeksforgeeks.org/profile/shaileshka40b9?tab=activity",
   hackerrank: "",    // optional: HackerRank profile URL
   atsRepo: "https://github.com/shaileshkasbekar/ATS-Resume-Analyzer",
-  minidbmsRepo: "https://github.com/shaileshkasbekar/MiniDBMS"
+  // Repo is private for now. Once it's public, paste the URL below:
+  // https://github.com/shaileshkasbekar/MiniDBMS
+  minidbmsRepo: ""
 };
 
 (function () {
